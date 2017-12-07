@@ -5,7 +5,12 @@
 
 .search-bar input {
     width: 75%;
+    padding: 10px;
 }
+
+.search-bar input::-webkit-input-placeholder {
+    color: #aaa;
+  }
 
 .video-item img {
     max-width: 64px;

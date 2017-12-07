@@ -17,7 +17,12 @@ class App extends Component {
       selectedVideo: null
     };
 
-    YTSearch({key: API_KEY, term: 'guitar'}, (videos) => {
+    this.videoSearch('it\'s-a me mario');
+
+  }
+
+  videoSearch(searchTerm) {
+    YTSearch({key: API_KEY, term: searchTerm}, (videos) => {
       this.setState({ 
         videos: videos,
         selectedVideo: videos[0]
@@ -26,9 +31,12 @@ class App extends Component {
   }
 
   render() {
+    //use lodash to call function every 300ms for smoother feel
+    const videoSearch = _.debounce(term => {this.videoSearch(term)}, 300);
+
     return (
-      <div>React Youtube Search
-        <SearchBar />
+      <div>
+        <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList 
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
