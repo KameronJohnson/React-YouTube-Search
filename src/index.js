@@ -9,15 +9,19 @@ import VideoDetail from './components/video-detail';
 
 const API_KEY = 'AIzaSyC_JEMPx05tHASPi5cCzW1wRRT4nhpWAjs';
 
-YTSearch({key: API_KEY, term: 'guitar'}, data => {
-  console.log(data);
-});
+
 
 class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
+    this.state = { videos: [] };
+
+    YTSearch({key: API_KEY, term: 'guitar'}, (videos) => {
+      this.setState({ videos: videos });
+    });
   }
+
   render() {
     return (
       <div>React Youtube Search
