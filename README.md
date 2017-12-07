@@ -1,4 +1,6 @@
-# ReactYouTubeSearch
+# React YouTube Search
+
+An YouTube video search app built with React utlizing youtube-api-search
 
 ### Getting Started
 
@@ -8,4 +10,8 @@
 > npm install
 > npm start
 ```
+
+Navigate to localhost:8080 and have some fun!
+
+MIT License
 
