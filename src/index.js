@@ -23,6 +23,7 @@ class App extends Component {
     return (
       <div>React Youtube Search
         <SearchBar />
+        <VideoDetail video={this.state.videos[0]}/>
         <VideoList videos={this.state.videos} />
       </div>
     )
