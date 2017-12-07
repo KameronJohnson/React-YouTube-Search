@@ -6,10 +6,7 @@ import SearchBar from './components/search-bar';
 import VideoList from './components/video-list';
 import VideoDetail from './components/video-detail';
 
-
 const API_KEY = 'AIzaSyC_JEMPx05tHASPi5cCzW1wRRT4nhpWAjs';
-
-
 
 class App extends Component {
   constructor(props) {
@@ -26,6 +23,7 @@ class App extends Component {
     return (
       <div>React Youtube Search
         <SearchBar />
+        <VideoList videos={this.state.videos} />
       </div>
     )
   }
