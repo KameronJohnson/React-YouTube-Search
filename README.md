@@ -3,7 +3,7 @@
 ![alt text](http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/128/youtube-icon.png "YouTube logo")
 
 
-A YouTube video search app built with React utlizing youtube-api-search
+A blazing fast YouTube video search app built with React.
 
 ### Getting Started
 
