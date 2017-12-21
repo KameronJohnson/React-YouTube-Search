@@ -1,11 +1,42 @@
+body {
+    background-image: url(./images/bg.png);
+}
+
+.logo {
+    position: absolute;
+    left: 70px;
+    top: 12px;
+}
+
+.logo > img {
+    width: 110px;
+}
+
+@media (max-width: 1350px) {
+    .logo {
+        left: 15px;
+        top: 28.5px;
+    }
+    .logo > img {
+        width: 65px;
+    }
+    .search-bar input {
+        margin-left: 50px;
+    }
+}
+
 .search-bar {
-    margin: 20px;
+    margin: 25px;
     text-align: center;
 }
 
 .search-bar input {
     width: 75%;
     padding: 10px;
+}
+
+.search-bar input:focus {
+    outline-color: red;
 }
 
 .search-bar input::-webkit-input-placeholder {
@@ -17,10 +48,21 @@
 }
 
 .video-detail .details {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.video-detail .details > div:first-child {
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .list-group {
+        padding-left: 15px !important;
+        margin-top: 20px
+    }
 }
 
 .list-group-item {
@@ -29,4 +71,9 @@
 
 .list-group-item:hover {
     background-color: #eee;
+    background-image: none;
+}
+
+.list-group-item, .video-detail .details {
+    background-image: url(./images/linen.png);
 }
