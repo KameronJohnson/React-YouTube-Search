@@ -36,7 +36,7 @@ class App extends Component {
 
     return (
       <div>
-        <div className="logo"><img src="../style/images/yt.jpg"/> </div>
+        <div className="logo"><img src={require("./style/images/yt.jpg")}/> </div>
         <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList 
