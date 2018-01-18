@@ -1,7 +1,6 @@
 # React YouTube Search
 
-![alt text](http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/128/youtube-icon.png "YouTube logo")
-
+<img src="https://react-youtube-search-kj.netlify.com/static/media/yt.b264728a.jpg" width="200">
 
 A blazing fast YouTube video search app built with React.
 
