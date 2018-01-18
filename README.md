@@ -5,6 +5,8 @@
 
 A blazing fast YouTube video search app built with React.
 
+[Live Demo](https://react-youtube-search-kj.netlify.com/ "React YouTube Search")
+
 ### Getting Started
 
 ```
